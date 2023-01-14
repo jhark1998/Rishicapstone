@@ -74,7 +74,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = "${aws_vpc.vpc.id}"
 
   tags = {
-    Name = "igw"
+    Name = "Rishi1998_igw"
   }
 }
 
@@ -88,7 +88,7 @@ resource "aws_route_table" "routeTablePub" {
   }
 
   tags = {
-    Name = "routeTablePub"
+    Name = "Rishi1998_routeTable"
   }
 }
 
@@ -102,7 +102,7 @@ resource "aws_route_table_association" "associate" {
 resource "aws_eip" "ip" {
   vpc      = true
   tags = {
-    Name = "elasticIP"
+    Name = "Rishi1998_elasticIP"
   }
 }
 
@@ -112,7 +112,7 @@ resource "aws_nat_gateway" "nat-gateway" {
   subnet_id     = "${aws_subnet.public-subnet-1a.id}"
 
   tags = {
-    Name = "nat-gateway"
+    Name = "Rishi1998_nat-gateway"
   }
 }
 
